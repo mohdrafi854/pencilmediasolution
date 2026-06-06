@@ -4,7 +4,7 @@ export const TOP_HEADER = {
 };
 
 export const NAVBAR = {
-  LOGO: "https://pencilmediasolutions.com/wp-content/uploads/2025/05/pencilmedia-logo-removebg-preview.png",
+  LOGO: "/images/logo.png",
   LINKS: [
     {
       label: "Home",

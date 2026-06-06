@@ -1,4 +1,4 @@
-'use client';
+
 import React from 'react';
 import { Box, Container, Typography, Grid, IconButton, Link } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';

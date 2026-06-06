@@ -1,4 +1,3 @@
-"use client";
 import { AppBar, Container, Button, Grid, Stack, Paper, Box, Typography, List, ListItem, Toolbar } from "@mui/material";
 const Banner = ({title, subTitle, btnText}) => {
   return (

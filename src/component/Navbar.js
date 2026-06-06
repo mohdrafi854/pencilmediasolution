@@ -1,5 +1,3 @@
-"use client";
-
 import {
   AppBar,
   Container,
@@ -10,9 +8,9 @@ import {
   Link,
 } from "@mui/material";
 import { Box } from "@mui/material";
-import { Typography } from "@mui/material";
 import { List } from "@mui/material";
 import { ListItem, Toolbar } from "@mui/material";
+import Image from "next/image";
 const Navbar = ({logo, links}) => {
 
 
@@ -27,14 +25,11 @@ const Navbar = ({logo, links}) => {
       <Container maxWidth="lg">
         <Toolbar sx={{ display: "flex", justifyContent: "space-between", p:0 }}>
           {/* Left Side: Logo */}
-          <Typography>
-            <img
-              src={logo}
-              alt="Pencil Media Solutions"
+          <Box>
+            <Image src={logo} alt="Pencil Media Solutions"
               title="Pencil Media Solutions"
-              width={187}
-            />
-          </Typography>
+              width={188} height={60}/>
+          </Box>
 
           {/* Right Side: Navbar */}
           <Box sx={{ display: "flex" }}>
