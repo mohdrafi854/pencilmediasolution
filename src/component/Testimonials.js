@@ -2,30 +2,13 @@
 import React from 'react';
 import { Box, Container, Typography, Grid, Card, CardContent, Rating, Button } from '@mui/material';
 
-const testimonials = [
-  {
-    name: 'Taria Dean',
-    title: 'T\'s Tasty Tater Salad',
-    quote: 'She is very organized! It was a pleasure to work with Karima on the design of my website...',
-  },
-  {
-    name: 'Joseph Lacava',
-    title: 'Health Culture',
-    quote: 'Nailed the aesthetic! I knew that I was in good hands right from the very beginning...',
-  },
-  {
-    name: 'Gwen Cohen',
-    title: 'The Prophet\'s Voice',
-    quote: 'I am a lifetime customer! Wow! What can\'t I say about Karima & Dreamworth...',
-  },
-];
 
-const Testimonials = () => {
+const Testimonials = ({title, testimonials, btnText}) => {
   return (
     <Box sx={{ py: 8, bgcolor: '#0b1640', color: 'white' }}>
       <Container maxWidth="lg">
         <Typography variant="h3" align="center" fontWeight="bold" sx={{ mb: 6 }}>
-          What Our Clients Say
+          {title}
         </Typography>
 
         <Grid container spacing={3}>
@@ -52,7 +35,7 @@ const Testimonials = () => {
 
         <Box sx={{ textAlign: 'center', mt: 6 }}>
           <Button variant="contained" sx={{ bgcolor: 'white', color: 'black', borderRadius: 5, px: 4 }}>
-            Read More Reviews
+            {btnText}
           </Button>
         </Box>
       </Container>

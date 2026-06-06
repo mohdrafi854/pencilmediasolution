@@ -1,4 +1,4 @@
-"use client"; // Ye top par hona zaruri hai
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -12,28 +12,14 @@ const Slider = dynamic(() => import("react-slick"), {
   ssr: false,
 });
 
-const ClientsSlider = () => {
-  // Aapka settings aur render code yahan rahega...
+const ClientsSlider = ({title, clientsLogo}) => {
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
     slidesToShow: 5,
-    // ... baaki settings
   };
 
-  const clients = [
-    { src: "/images/1n-1.png" },
-    { src: "/images/2n-1.png" },
-    { src: "/images/3n.png" },
-    { src: "/images/5n.png" },
-    { src: "/images/fast-n-fresh.jpg" },
-    { src: "/images/Screenshot_1-2.png" },
-    { src: "/images/Screenshot_1-3.png" },
-    { src: "/images/Screenshot_4-1.png" },
-    { src: "/images/Screenshot_5.png" },
-    { src: "/images/ssss.png" },
-  ];
 
   return (
     <Box sx={{ py: 8, bgcolor: "#fff" }}>
@@ -44,11 +30,11 @@ const ClientsSlider = () => {
           fontWeight="bold"
           sx={{ mb: 6 }}
         >
-          Client Who Trusted Us
+          {title}
         </Typography>
 
         <Slider {...settings}>
-          {clients.map((client, index) => (
+          {clientsLogo.map((client, index) => (
             <Box key={index} sx={{ px: 2 }}>
               <Paper
                 elevation={0}

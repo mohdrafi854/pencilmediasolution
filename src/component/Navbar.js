@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+
 import {
   AppBar,
   Container,
@@ -13,37 +13,8 @@ import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
 import { List } from "@mui/material";
 import { ListItem, Toolbar } from "@mui/material";
-const Navbar = () => {
-  const logo =
-    "https://pencilmediasolutions.com/wp-content/uploads/2025/05/pencilmedia-logo-removebg-preview.png";
-  const links = [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
-      href: "/",
-    },
-    {
-      label: "Services",
-      href: "/",
-    },
-    {
-      label: "Careers",
-      href: "/",
-    },
-    {
-      label: "Contact Us",
-      href: "/",
-    },
-  ];
+const Navbar = ({logo, links}) => {
 
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
-
-  const handleOpen = (event) => setAnchorEl(event.currentTarget);
-  const handleClose = () => setAnchorEl(null);
 
   return (
     <AppBar
