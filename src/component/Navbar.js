@@ -38,8 +38,7 @@ const Navbar = ({logo, links}) => {
                 link.label === "Our Services" ? (
                   <ListItem key={i} sx={{ p: 0 }}>
                     <Button
-                      onMouseEnter={handleOpen}
-                      onMouseLeave={handleClose}
+                 
                       endIcon={<KeyboardArrowDownIcon />}
                       sx={{
                         color: "#0E194F",
@@ -49,15 +48,15 @@ const Navbar = ({logo, links}) => {
                     >
                       {link.label}
                     </Button>
-                    <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-                      <MenuItem onClick={handleClose}>
+                    <Menu>
+                      <MenuItem>
                         Digital Strategy
                       </MenuItem>
-                      <MenuItem onClick={handleClose}>
+                      <MenuItem>
                         Website Development
                       </MenuItem>
-                      <MenuItem onClick={handleClose}>SEO</MenuItem>
-                      <MenuItem onClick={handleClose}>
+                      <MenuItem>SEO</MenuItem>
+                      <MenuItem>
                         Social Media Management
                       </MenuItem>
                     </Menu>
