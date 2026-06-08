@@ -16,6 +16,12 @@ export const metadata = {
   description: "",
 };
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import Topbar from "../component/Topbar";
+import Navbar from "@/component/Navbar";
+import Footer from "@/component/Footer";
+import { NAVBAR } from "@/constants";
+import { TOP_HEADER } from "@/constants";
+import { FOOTER } from "@/constants";
 
 export default function RootLayout({ children }) {
   return (
@@ -25,7 +31,10 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <AppRouterCacheProvider>
+          <Topbar mobile={TOP_HEADER.MOBILE} email={TOP_HEADER.EMAIL} />
+          <Navbar logo={NAVBAR.LOGO} links={NAVBAR.LINKS} />
           {children}
+          <Footer title={FOOTER.TITLE} location={FOOTER.ADDRESS} phone={FOOTER.PHONE} email={FOOTER.EMAIL} titleSecond={FOOTER.TITLE_SECOND} copyRight={FOOTER.COPYRIGHT} />
         </AppRouterCacheProvider>
       </body>
     </html>

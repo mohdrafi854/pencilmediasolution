@@ -7,7 +7,7 @@ const Topbar = ({mobile, email}) => {
     <Box sx={{ bgcolor: "#0e194f", py: 1, borderBottom: "1px solid #0e194f" }}>
       <Container maxWidth="lg">
         
-        <Stack direction="row" spacing={3} sx={{ justifyContent: "flex-end" }}>
+        <Stack direction={{xs:"column", md:"row"}} spacing={3} sx={{ justifyContent: "flex-end" }}>
          
           <Link
             href="tel:+91{mobile}"
