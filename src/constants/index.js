@@ -12,7 +12,7 @@ export const NAVBAR = {
     },
     {
       label: "About",
-      href: "/",
+      href: "/about",
     },
     {
       label: "Services",
@@ -20,7 +20,7 @@ export const NAVBAR = {
     },
     {
       label: "Careers",
-      href: "/",
+      href: "/careers",
     },
     {
       label: "Contact Us",
@@ -138,4 +138,14 @@ export const AboutData = {
   "With over a decade of hands-on experience in the ever-evolving digital space, we’ve seen trends come and go, but our commitment to innovation and insight-driven execution has remained constant. Every brand we work with gets a custom approach, rooted in strategy and elevated with creativity.", // Yahan comma add karein
   "At Pencil Media, we don’t just chase results—we craft them. We listen, we brainstorm, we experiment, and we deliver. So if you’re looking to cut through the digital noise and truly engage your audience, we’re here for it."
 ]
+}
+
+export const Career = {
+  TITLE:"Draw the Possibility",
+  PARAGRAPH:[
+    "Are you passionate about building exceptional digital experiences? At Pencil media solutions, creativity meets innovation—and we’re always on the lookout for driven individuals ready to shape the future of the web.",
+    "Whether you’re a designer, developer, strategist, or storyteller, if you’re eager to push boundaries and make an impact, we want to hear from you.",
+    "Explore our current openings and take the first step toward an exciting career with us."
+  ],
+  IMAGEURL:"/images/career-image.jpg"
 }
