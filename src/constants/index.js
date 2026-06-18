@@ -24,7 +24,7 @@ export const NAVBAR = {
     },
     {
       label: "Contact Us",
-      href: "/",
+      href: "/contactus",
     },
   ],
 };
@@ -121,31 +121,45 @@ export const TESTIMONIALS = {
 };
 
 export const FOOTER = {
-    TITLE:"GET IN TOUCH",
-    ADDRESS:"Pencil Media Address GF 002, Pelt No.1, Sector 38 Gurgeon, 213076",
-    PHONE:"7075553766",
-    EMAIL:"Marketing@pencilmediasolutions.com",
-    TITLE_SECOND:"STAY CONNECTED",
-    COPYRIGHT:"&amp;copy 2022 | All Rights Reserved | PenCil Media Agencies - A Brand of Moon Enterprises",
-
-}
+  TITLE: "GET IN TOUCH",
+  ADDRESS: "Pencil Media Address GF 002, Pelt No.1, Sector 38 Gurgeon, 213076",
+  PHONE: "7075553766",
+  EMAIL: "Marketing@pencilmediasolutions.com",
+  TITLE_SECOND: "STAY CONNECTED",
+  COPYRIGHT:
+    "&amp;copy 2022 | All Rights Reserved | PenCil Media Agencies - A Brand of Moon Enterprises",
+};
 
 export const AboutData = {
-  TITLE:"Get to Know the Heart of Pencil Media",
+  TITLE: "Get to Know the Heart of Pencil Media",
   DESC: [
-  "At Pencil Media, we believe great ideas don’t just happen—they’re drawn out with intention, creativity, and a deep understanding of what makes brands connect. Over the years, we’ve grown into a tight-knit team of thinkers, creators, and doers, passionate about shaping meaningful digital experiences.", // Yahan comma add karein
-  "We are not just a digital agency we are your creative partners. Whether it is bringing a fresh perspective to your branding, designing a user-friendly website, or crafting content that actually speaks to people, our goal is simple—make your brand memorable and impactful.", // Yahan comma add karein
-  "With over a decade of hands-on experience in the ever-evolving digital space, we’ve seen trends come and go, but our commitment to innovation and insight-driven execution has remained constant. Every brand we work with gets a custom approach, rooted in strategy and elevated with creativity.", // Yahan comma add karein
-  "At Pencil Media, we don’t just chase results—we craft them. We listen, we brainstorm, we experiment, and we deliver. So if you’re looking to cut through the digital noise and truly engage your audience, we’re here for it."
-]
-}
+    "At Pencil Media, we believe great ideas don’t just happen—they’re drawn out with intention, creativity, and a deep understanding of what makes brands connect. Over the years, we’ve grown into a tight-knit team of thinkers, creators, and doers, passionate about shaping meaningful digital experiences.", // Yahan comma add karein
+    "We are not just a digital agency we are your creative partners. Whether it is bringing a fresh perspective to your branding, designing a user-friendly website, or crafting content that actually speaks to people, our goal is simple—make your brand memorable and impactful.", // Yahan comma add karein
+    "With over a decade of hands-on experience in the ever-evolving digital space, we’ve seen trends come and go, but our commitment to innovation and insight-driven execution has remained constant. Every brand we work with gets a custom approach, rooted in strategy and elevated with creativity.", // Yahan comma add karein
+    "At Pencil Media, we don’t just chase results—we craft them. We listen, we brainstorm, we experiment, and we deliver. So if you’re looking to cut through the digital noise and truly engage your audience, we’re here for it.",
+  ],
+};
 
 export const Career = {
-  TITLE:"Draw the Possibility",
-  PARAGRAPH:[
+  TITLE: "Draw the Possibility",
+  PARAGRAPH: [
     "Are you passionate about building exceptional digital experiences? At Pencil media solutions, creativity meets innovation—and we’re always on the lookout for driven individuals ready to shape the future of the web.",
     "Whether you’re a designer, developer, strategist, or storyteller, if you’re eager to push boundaries and make an impact, we want to hear from you.",
-    "Explore our current openings and take the first step toward an exciting career with us."
+    "Explore our current openings and take the first step toward an exciting career with us.",
   ],
-  IMAGEURL:"/images/career-image.jpg"
-}
+  IMAGEURL: "/images/career-image.jpg",
+};
+
+export const ContactData = {
+  title: "Let’s Start Reaching Your Digital Goals",
+  para: "We’re excited to hear from you and explore how we can collaborate. Whether you’re ready to kick off a project or just want to learn more, we’re here to help.",
+  contactDetails: [
+    {
+      id: 1,
+      heading: "Email us your details and requirements at:",
+      email: "Marketing@PencilMediaSolutions.com",
+    },
+  ],
+  paraSecond:
+    "Let’s build something amazing—together. You can also fill this form & we’ll get back in 2 business days.",
+};
