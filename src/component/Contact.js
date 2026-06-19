@@ -13,14 +13,16 @@ import {
   ListItemText,
 } from "@mui/material";
 
+import ContactForm from "./ContactForm";
+
 const Contact = ({ data }) => {
   const { title, para, contactDetails, paraSecond } = data;
   return (
     <Container maxWidth="lg">
-      <Box>
+      <Box sx={{margin: {lg: "50px 0", xs: "20px 0"}}}>
         <Grid container space={2}>
           <Grid size={{ xs: 12, md: 6 }}>
-            <Typography variant="h3">{title}</Typography>
+            <Typography variant="h4">{title}</Typography>
             {para}
             <List>
               {contactDetails.map((item) => (
@@ -28,14 +30,16 @@ const Contact = ({ data }) => {
                   <ListItemText
                     primary={item.heading}
                     secondary={item.email}
-                    secondaryTypographyProps={{ variant: "h6" }}
+                    
                   />
                 </ListItem>
               ))}
             </List>
             {paraSecond}
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }}></Grid>
+          <Grid size={{ xs: 12, md: 6 }}>
+            <ContactForm />
+          </Grid>
         </Grid>
       </Box>
     </Container>
